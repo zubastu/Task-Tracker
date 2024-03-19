@@ -1,0 +1,13 @@
+@use '../../assets/styles/variables';
+
+.icon {
+  color: variables.$color-palette-icon;
+}
+
+.icon:hover {
+  color: variables.$color-palette-white;
+}
+
+.icon:hover{
+  stroke: variables.$color-palette-white;
+}
