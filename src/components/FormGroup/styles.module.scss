@@ -1,12 +1,11 @@
 @use '../../assets/styles/variables';
 @use '../../assets/styles/mixins';
 
-.main {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 100%;
-  max-width: 600px;
+  min-width: 280px;
+  gap: 20px;
 }

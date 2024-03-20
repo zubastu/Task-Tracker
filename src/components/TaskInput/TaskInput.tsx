@@ -1,19 +1,16 @@
-import { useFormContext, RegisterOptions } from "react-hook-form";
+import { useFormContext } from "react-hook-form";
 
 import styles from "./styles.module.scss";
-import { FC } from "react";
 
 export interface InputProps {
   name: string;
   type?: string;
   required?: boolean;
   autoFocus?: boolean;
-  validation?: RegisterOptions;
-  onBlur?: () => void;
   disabled?: boolean;
 }
 
-const AuthInput: FC<InputProps> = ({
+const TaskInput: React.FC<InputProps> = ({
   name,
   type = "text",
   disabled = false,
@@ -32,4 +29,4 @@ const AuthInput: FC<InputProps> = ({
   );
 };
 
-export default AuthInput;
+export default TaskInput;

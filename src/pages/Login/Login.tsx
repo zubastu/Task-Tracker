@@ -1,6 +1,11 @@
-import styles from ",/styles.module.scss";
+import styles from "./styles.module.scss";
+import LoginForm from "../../components/LoginForm/LoginForm.tsx";
 const Login = () => {
-  return <div></div>;
+  return (
+    <section className={styles.container}>
+      <LoginForm />
+    </section>
+  );
 };
 
 export default Login;

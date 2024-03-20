@@ -20,6 +20,13 @@
   line-height: 26px;
 }
 
+@mixin with-border-bottom {
+  border-bottom: 1px solid variables.$color-palette-border;
+}
+
+@mixin transition-opacity {
+  transition: opacity .5s ease;
+}
 
 
 @mixin typography-m {

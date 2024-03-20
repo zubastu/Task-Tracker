@@ -1,31 +1,24 @@
-import { FormProvider, useForm } from "react-hook-form";
+import FormGroup from "../FormGroup/FormGroup.tsx";
+import AuthInput from "../AuthInput/AuthInput.tsx";
+import SubmitButton from "../SubmitButton/SubmitButton.tsx";
+import { FC } from "react";
 
-const RegistrationForm = () => {
-  const formMethods = useForm<TSearchForm>();
-  const { formState, register, handleSubmit, setValue } = formMethods;
+type TRegistrationForm = {
+  login: string;
+  password: string;
+};
 
-  const onSubmit = (data) => {};
+const RegistrationForm: FC = () => {
+  const onSubmit = (data: TRegistrationForm) => {
+    console.log(data);
+  };
   return (
-    <FormProvider {...formMethods}>
-      <form
-        noValidate={true}
-        className={styles.form}
-        onSubmit={handleSubmit(onSubmit)}
-      >
-        <button
-          className={styles.button}
-          disabled={!formState.isValid}
-          type="submit"
-        ></button>
-        <input
-          className={styles.input}
-          type="text"
-          {...register("")}
-          required={true}
-          autoFocus={true}
-        />
-      </form>
-    </FormProvider>
+    <FormGroup onSubmit={onSubmit}>
+      <AuthInput name="login" />
+      <AuthInput name="password" type="password" />
+      <AuthInput name="replyPassword" type="password" />
+      <SubmitButton label="Регистрация" />
+    </FormGroup>
   );
 };
 
