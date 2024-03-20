@@ -30,9 +30,7 @@ body {
   width: 100dvw;
   display: flex;
   align-items: center;
-  gap: 32px;
-  max-width: 1400px;
-  padding: 64px 130px;
+  height: 100dvh;
 }
 
 @media (max-width: 1250px) {
