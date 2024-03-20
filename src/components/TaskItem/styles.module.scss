@@ -1,2 +1,11 @@
 @use '../../assets/styles/variables';
 @use '../../assets/styles/mixins';
+
+.container {
+  @include mixins.with-border-bottom;
+  @include mixins.typography-x;
+  padding: 20px 0 21px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
