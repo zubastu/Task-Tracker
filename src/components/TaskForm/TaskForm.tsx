@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 
 import FormGroup from "../FormGroup/FormGroup.tsx";
 import TaskInput from "../TaskInput/TaskInput.tsx";
+import ButtonsConstructor from "../Buttons/BttonsConstructor.tsx";
 
 const TaskForm = () => {
   const onSubmit = () => {
@@ -11,7 +12,7 @@ const TaskForm = () => {
     <FormGroup onSubmit={onSubmit} style={styles.form}>
       <div className={styles.inputContainer}>
         <TaskInput name="task" />
-        <button type="submit" className={styles.submitButton}>
+        <ButtonsConstructor>
           <svg
             width="22"
             height="22"
@@ -27,7 +28,7 @@ const TaskForm = () => {
               strokeLinejoin="round"
             />
           </svg>
-        </button>
+        </ButtonsConstructor>
       </div>
     </FormGroup>
   );

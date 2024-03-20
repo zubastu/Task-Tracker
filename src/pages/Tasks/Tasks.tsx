@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 import TaskForm from "../../components/TaskForm/TaskForm.tsx";
 import TaskContainer from "../../components/TaskContainer/TaskContainer.tsx";
+import ButtonsConstructor from "../../components/Buttons/BttonsConstructor.tsx";
 
 const Tasks = () => {
   return (
@@ -8,7 +9,7 @@ const Tasks = () => {
       <div className={styles.taskFormContainer}>
         <div className={styles.playButtonContainer}>
           <TaskForm />
-          <button className={styles.playButton}>
+          <ButtonsConstructor>
             <svg
               width="24"
               height="24"
@@ -31,7 +32,7 @@ const Tasks = () => {
                 strokeLinejoin="round"
               />
             </svg>
-          </button>
+          </ButtonsConstructor>
         </div>
       </div>
       <TaskContainer />

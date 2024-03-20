@@ -17,15 +17,3 @@
   width: 100%;
 }
 
-.submitButton {
-  background: inherit;
-  padding: 0;
-  border: none;
-  color: variables.$color-palette-gray;
-  transition: color .5s ease;
-}
-
-.submitButton:hover {
-  color: variables.$color-palette-white;
-  transition: color .5s ease;
-}

@@ -5,6 +5,8 @@ const ActiveTasks = () => {
   return (
     <ul className={styles.container}>
       <TaskItem text="Текст для выполняемой задачи" />
+      <TaskItem text="Текст для выполняемой задачи" />
+      <TaskItem text="Текст для выполняемой задачи Текст для выполняемой задачи Текст для выполняемой задачи" />
     </ul>
   );
 };

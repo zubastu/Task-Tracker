@@ -9,3 +9,43 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.taskTextContentContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 38px;
+}
+
+.taskTextContent {
+  min-width: 282px;
+  max-width: 282px;
+  display: flex;
+}
+
+.taskInteractiveContainer{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.taskActiveTime {
+  max-width: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskTimeTracker {
+  color: variables.$color-palette-blue;
+}
+
+.hideContainer {
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.hideContainer:hover {
+  opacity: 1;
+}

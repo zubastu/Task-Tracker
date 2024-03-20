@@ -1,0 +1,17 @@
+@use '../../assets/styles/variables';
+@use '../../assets/styles/mixins';
+
+.button {
+  background: inherit;
+  padding: 0;
+  border: none;
+  color: variables.$color-palette-gray;
+  transition: color .5s ease;
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  color: variables.$color-palette-white;
+  transition: color .5s ease;
+}
